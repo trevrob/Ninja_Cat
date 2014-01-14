@@ -1,0 +1,44 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>Ninja Cat</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Below meta tag ensures proper rendering mobile device touch screens --> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css'> -->
+	<link rel="stylesheet" href='Ninja_Cat.css'>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	  <!-- <script src='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'></script> -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.pic').click(function(){
+			 	var cat = $(this).attr('src');
+			 	var pics = $(this).attr('alt');
+			 	$(this).attr('src', pics);
+			 	$(this).attr('alt', cat);
+			 	
+			 		// move alt into src
+			 		// mmove var into alt 
+		 	})
+	})
+
+
+	</script>
+</head>
+<body>
+	<table>
+<tr>
+	<tr><td><img class="pic" src="cat1.jpg" alt="ninja1.jpg"></td></tr>
+	<tr><td><img class="pic" src="cat2.jpg" alt="ninja2.jpg"></td></tr>
+	<tr><td><img class="pic" src="cat3.jpg" alt="ninja3.jpg"></td></tr>
+	<tr><td><img class="pic" src="cat4.jpg" alt="ninja4.jpg"></td></tr>
+	<tr><td><img class="pic" src="cat5.jpg" alt="ninja5.jpg"></td></tr>
+</tr>
+<tr>
+
+</tr>
+</table>
+<img ="cat1.jpg">
+
+</body>
+</html>
